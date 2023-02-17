@@ -11,6 +11,7 @@ function BabyHog(props) {
   function handleChangeWeight(e) {
     // how can we reuse this for both buttons?
     // perhaps something with e.target.name === "+"
+
   }
 
   return (
