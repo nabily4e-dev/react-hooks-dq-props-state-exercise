@@ -21,12 +21,18 @@ function BabyHog(props) {
 
         const operation = e.target.name;
 
-        operation === "+" ? setWeight(weight + 1)
-            : setWeight(weight - 1)
+        // operation === "+" ? setWeight(weight + 1)
+        //     : setWeight(weight - 1)
+
+        if (operation === "+") {
+            setWeight(weight + 1);
+        } else if (operation === "-" && weight > 0) {
+            setWeight(weight - 1);
+        }
     }
 
     const {name, hobby, eyeColor} = props;
-    const eyeColorImage = eyeColorMapping[eyeColor];
+    const eyeColorImage = eyeColorMapping[eyeColor] || normalBaby;
 
     return (
         <li className="hog-babies">
@@ -40,7 +46,7 @@ function BabyHog(props) {
 
             <div className="hb-wrap">
                 <img
-                    src={normalBaby}
+                    src={eyeColorImage}
                     style={{height: "200px"}}
                     alt="MasterBlasterJrJr"
                 />
