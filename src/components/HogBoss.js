@@ -39,7 +39,7 @@ function HogBoss() {
       <div id="boss-domicile">
         <img id="boss-blaster" src={Boss} alt="" />
       </div>
-      <ul className="hoglist">
+      <ul className="hog-list">
           {offspring.map((hog) => (
               <BabyHog
                   key={hog.id}

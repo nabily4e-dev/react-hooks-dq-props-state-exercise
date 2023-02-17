@@ -54,14 +54,14 @@ body {
   }
 }
 
-.hoglist {
+.hog-list {
   list-style: none;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.hogbabies {
+.hog-babies {
   align-self: flex-end;
   align-items: center;
   padding: 50px 50px 0 50px;

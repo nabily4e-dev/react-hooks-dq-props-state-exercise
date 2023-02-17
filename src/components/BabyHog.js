@@ -29,7 +29,7 @@ function BabyHog(props) {
     const eyeColorImage = eyeColorMapping[eyeColor];
 
     return (
-        <li className="hogbabies">
+        <li className="hog-babies">
             <h1>Name: {name}</h1>
             <h3>Weight: {weight}</h3>
             <h3>Hobby: {hobby}</h3>
